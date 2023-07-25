@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        color: #2c2828;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/bg3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family: 'Merriweather', serif;
+        font-size: 18px;
+    }
+
+    .left {
+        /* border: 2px solid rgb(68, 0, 255); */
+        display: inline-block;
+        position: absolute;
+        left: 14px;
+        top: 15px;
+    }
+
+    .mid {
+        display: block;
+        width: 56%;
+        margin: 43px auto;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        /* border: 2px solid rgb(14, 185, 42); */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 44px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display:inline-block;
+        font-size: 24px;
+    }
+
+    .navbar li a {
+        color: #f5ece7f7;
+        text-decoration: none;
+        padding: 29px;
+    }
+
+    .left img {
+        width: 48px;
+    }
+
+    .navbar li a:hover,.navbar li a.active {
+        text-decoration: underline;
+        color: rgb(31, 30, 30);
+    }
+
+    .btn {
+        width: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+    }
+
+    .btn:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        margin: 113px 35px;
+        padding: 2px 2px;
+        width: 33%;
+        border-radius: 7px;
+    }
+    .formgrp input{
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 1px solid black;
+        margin: 3px auto;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    .container h1{
+       text-align: center;
+    }
+    .container button{
+        display: block;
+       width: 23%;
+       margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <div class="left">
+                <img src="images/logo1.png" alt="">
+                <div>Olympia Fitness</div> 
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">Email Us</button>
+    </header>
+    <div class="container">
+        <h1> Apply Now!</h1>
+        <form action="noaction.php">
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Email Id">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
